@@ -6,8 +6,8 @@ from house import ToBuyList
 from house import Home
 from rounds import Round
 
-TOKEN = "456087597:AAFovjaINg0aqR_rwL_qFQ0dvCYERCo6fik"  # testing bot token
-#  TOKEN = "389923145:AAFKDIOoGD08DYbVFUCw6k-2ySAfC3zQo1s" # myhome bot token
+#  TOKEN = "456087597:AAFovjaINg0aqR_rwL_qFQ0dvCYERCo6fik"  # testing bot token
+TOKEN = "389923145:AAFKDIOoGD08DYbVFUCw6k-2ySAfC3zQo1s" # myhome bot token
 
 
 def handle(msg):
