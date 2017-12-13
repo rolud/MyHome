@@ -91,9 +91,9 @@ def handle(msg):
     elif command.lower() == "/garbage":
         message = "Ci sono " + str(house.there_is_garbage()) + " sacchi da buttare."
         bot.sendMessage(chat_id, message)
-    elif command.lower() == "/garbagealarm":
-        message = "Ci sono " + str(house.there_is_garbage()) + " sacchi da buttare.\nButtateli."
-        notify_all(house.get_hsm_all(), message)
+    # elif command.lower() == "/garbagealarm":
+    #     message = "Ci sono " + str(house.there_is_garbage()) + " sacchi da buttare.\nButtateli."
+    #    notify_all(house.get_hsm_all(), message)
     elif command.lower() == "/save":
         save(home)
         message = "Data saved."
