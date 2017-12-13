@@ -19,12 +19,12 @@ def handle(msg):
         command = command.split("@")[0]
     # the first string in the message is the command
     # text is a list that contains remaining strings of the message
-    # print("--- Got command %-10s in chat %d sent by %s - %d" % (command, chat_id, sender_name, sender_id))
-    logfile = open("logfile.data", "a")
-    log = "--- " + time.strftime("%d/%m/%Y %H.%M.%S", time.gmtime()) + ": Got command " + command + " in chat "\
-          + str(chat_id) + " sent by " + sender_name + " - " + str(sender_id) + ".\n"
+    print("--- Got command %-10s in chat %d sent by %s - %d" % (command, chat_id, sender_name, sender_id))
+    # logfile = open("logfile.data", "a")
+    # log = "--- " + time.strftime("%d/%m/%Y %H.%M.%S", time.gmtime()) + ": Got command " + command + " in chat "\
+    #       + str(chat_id) + " sent by " + sender_name + " - " + str(sender_id) + ".\n"
     # print(log.rstrip())
-    logfile.write(log)
+    # logfile.write(log)
     if not house.is_hsm(sender_id):
         bot.sendMessage(chat_id, "Hey, you're new!")
         house.add_hsm(sender_id, sender_name)
