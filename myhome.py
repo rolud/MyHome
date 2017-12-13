@@ -127,7 +127,7 @@ def handle(msg):
         except KeyError:
             message = name + " non è un coinquilino."
         bot.sendMessage(chat_id, message)
-    logfile.close()
+    # logfile.close()
 
 
 def save(hm):  # saves data in a file
